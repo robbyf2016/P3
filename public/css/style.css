@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header_image{
+	float: left;
+}
+#head_title{
+	margin-left: 125px;
+}
+
+#navigation{
+	padding-top: 45px;
+}
+
+#description{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+ul{
+	font-style: italic;
+}
+
+#content{
+	margin: 4em;
+	margin-right: 200px;
+}
+
+#footer{
+	margin-right: auto;
+	margin-left: auto;
+	width: 30%;
+}
