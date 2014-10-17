@@ -6,8 +6,8 @@
 	<a href="/">Home</a> ->Lorem Ipsum
 @stop
 @section('description')
-<ul id="description">This Lorem-Ipsum page allows the user to select the different 
-options to generate lorem ipsum content.
+<ul id="description"><li>This Lorem-Ipsum page allows the user to select the different 
+options to generate lorem ipsum content.</li>
 </ul>
 @stop
 @section('content')
