@@ -1,3 +1,25 @@
+##Project 3 - Robby Fussell
+>## Live URL
+><http://p3.robbyfussell-harvard.me>
+
+>## Description
+This site helps developers by providing two types of test input. One is the lorem-ipsum text generator. It allows the user to select the number of paragraphs of lorem-ipsum text they need to use for their application
+The second type of test input is that of random users. Most applications and databases utilize users for access and manipulation. This application allows a user to select a random number of users to be generated.
+
+
+## Demo Information
+>    Will be performing to do a live demo - Diana please feel free to schedule me at anytime.
+
+## Details
+   This version contains a Lorem-Ipsum paragraph generator that will generate the number of selected paragraphs for the user.  This version of the random user generator generates a username along with other selectable options: number of users; locale; image; physical address; email address; username and password; MAC and IP address; company name; and credit card information.
+
+## Outside Code
+- HTML 5 image - http://www.pathowe.co.uk/news/HTML5.png
+- W3C W3C CSS image - http://jigsaw.w3.org/css-validator/images/vcss-blue
+- Lorem-Ipsum from Badcow - https://packagist.org/packages/badcow/lorem-ipsum
+- Random User from Fzaninotto - https://packagist.org/packages/fzaninotto/faker
+- Laravel PHP Framework - see below
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

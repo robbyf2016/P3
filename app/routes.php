@@ -10,64 +10,63 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-
+//##########################################################
+#Print out route paths
+//##########################################################
 Route::get('/routes', function()
 {
 	$route_info = File::get(app_path(). '/routes.php');
-	echo Pre::render($route_info, 'Routes');
-	//echo app_path() ."<br />";
-	//echo public_path() ."<br />";
-	//echo base_path() ."<br />";
-	//echo storage_path() ."<br />";
-	
+	echo Pre::render($route_info, 'Routes');	
 });
 
+//##########################################################
 #Homepage
+//##########################################################
 Route::get('/', function()
 {
 	return View::make('index');
-	//return 'Wewlcome to P3';
 });
 
+//##########################################################
 #Display form for Lorem
+//##########################################################
 Route::get('/lorem', function()
 {
 	return View::make('lorem');
-	//$generator = new Badcow\LoremIpsum\Generator();
-	//$paragraphs = $generator->getParagraphs(5);
-	//echo implode('<p>', $paragraphs);
-
-	//return 'Lorem';
 });
 
+//##########################################################
 #Display form for Random User
+//##########################################################
 Route::get('/random_user', function()
 {
-	$faker = Faker\Factory::create();
-	echo Pre::render($faker->name, 'Random Name');
-	echo Pre::render($faker->address, 'Address');
-	//return 'Random User';
+	return View::make('random');
 });
 
+//##########################################################
 #Process Lorem form
+//##########################################################
 Route::post('/lorem', function()
 {
 	$num = Input::get('para_num');
 	$generator = new Badcow\LoremIpsum\Generator();
 	$paragraphs = $generator->getParagraphs($num);
-	//$result = echo implode('<p>', $paragraphs);
 	return View::make('lorem')
         ->with('paragraphs', $paragraphs);
 });
-
+//##########################################################
 #Process Random Users form
+//##########################################################
 Route::post('/random_user', function()
 {
-	return 'Random User POST';
+	$selection = Input::all();
+	return View::make('random')
+		->with('selection', $selection);
 });
 
-
+//##########################################################
+//Testing area
+//##########################################################
 Route::get('/books', function()
 {
 	return 'Here are all the books...';

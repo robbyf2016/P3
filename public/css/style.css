@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+/* Style information for P3 CSCIE-15*/
+/*By Robby Fussell*/
+/*Harvard University*/
 
 .header_image{
 	float: left;
@@ -12,6 +15,11 @@
 	padding-top: 45px;
 }
 
+#options{
+	background-color: #CCC;
+	margin-right: 300px;
+}
+
 #description{
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
@@ -22,7 +30,6 @@ ul{
 
 #content{
 	margin: 4em;
-	margin-right: 200px;
 }
 
 #footer{

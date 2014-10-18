@@ -3,14 +3,29 @@
 	Welcome to Developers Best Friend Lorem Ipsum Page
 @stop
 @section('navigation')
+<!--************************************************
+	This is the breadcrumb navigation code to be
+	included by the _master blade template.
+	************************************************-->
 	<a href="/">Home</a> ->Lorem Ipsum
 @stop
 @section('description')
-<ul id="description"><li>This Lorem-Ipsum page allows the user to select the different 
-options to generate lorem ipsum content.</li>
+<!--************************************************
+	This is the description code to be
+	included by the _master blade template.
+	************************************************-->
+<ul id="description"><li>This Lorem-Ipsum page allows the user to select the number of 
+paragraphs to generate lorem ipsum content.</li>
 </ul>
 @stop
 @section('content')
+<!--************************************************
+	This is the content code to be
+	included by the _master blade template.  This
+	section creates an HTML form for the user to 
+	select the number of Lorem Ipsum paragraphs
+	that they desire to be produced.
+	************************************************-->
 	{{ Form::open(array('url' => 'lorem')) }}
 		<fieldset>
 			<legend>Lorem Ipsum Options</legend>

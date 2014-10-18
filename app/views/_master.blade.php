@@ -22,7 +22,7 @@
                     @yield('description')
 					@yield('content')
             	</div>
-                
+               
                 <div id="footer">
                 	<p>W3C Validated
 					<img src="images/HTML5.png" width="31" height="31" alt="HTML 5">
