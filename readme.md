@@ -18,6 +18,7 @@ The second type of test input is that of random users. Most applications and dat
 - W3C W3C CSS image - http://jigsaw.w3.org/css-validator/images/vcss-blue
 - Lorem-Ipsum from Badcow - https://packagist.org/packages/badcow/lorem-ipsum
 - Random User from Fzaninotto - https://packagist.org/packages/fzaninotto/faker
+- Paste\Pre from Aaron Oxborrow - https://packagist.org/packages/paste/pre
 - Laravel PHP Framework - see below
 
 ## Laravel PHP Framework
